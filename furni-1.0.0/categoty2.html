@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/category.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites
+      by Untree.co
+    </title>
+    <style>
+    .custom-navbar {
+        background: #3b5d50 !important;
+        padding-top: 20px;
+        padding-bottom: 20px; 
+    }
+    
+    .custom-navbar .navbar-brand {
+        font-size: 32px;
+        font-weight: 600; 
+    }
+    
+    .custom-navbar .navbar-brand > span {
+        opacity: .4; 
+    }
+    
+    .custom-navbar .navbar-toggler {
+        border-color: transparent; 
+    }
+    
+    .custom-navbar .navbar-toggler:active, .custom-navbar .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none; 
+    }
+    
+    @media (min-width: 992px) {
+        .custom-navbar .custom-navbar-nav li {
+            margin-left: 15px;
+            margin-right: 15px; 
+        } 
+    }
+    
+    .custom-navbar .custom-navbar-nav li a {
+        font-weight: 500;
+        color: #ffffff !important;
+        opacity: .5;
+        transition: .3s all ease;
+        position: relative; 
+    }
+    
+    @media (min-width: 768px) {
+        .custom-navbar .custom-navbar-nav li a:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            right: 8px;
+            background: #f9bf29;
+            height: 5px;
+            opacity: 1;
+            visibility: visible;
+            width: 0;
+            transition: .15s all ease-out; 
+        } 
+    }
+    
+    .custom-navbar .custom-navbar-nav li a:hover {
+        opacity: 1; 
+    }
+    
+    .custom-navbar .custom-navbar-nav li a:hover:before {
+        width: calc(100% - 16px); 
+    }
+    
+    .custom-navbar .custom-navbar-nav li.active a {
+        opacity: 1; 
+    }
+    
+    .custom-navbar .custom-navbar-nav li.active a:before {
+        width: calc(100% - 16px); 
+    }
+    
+    .custom-navbar .custom-navbar-cta {
+        margin-left: 0 !important;
+        flex-direction: row; 
+    }
+    
+    @media (min-width: 768px) {
+        .custom-navbar .custom-navbar-cta {
+            margin-left: 40px !important; 
+        } 
+    }
+    
+    .custom-navbar .custom-navbar-cta li {
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+    
+    .custom-navbar .custom-navbar-cta li:first-child {
+        margin-right: 20px; 
+    }
+    
+    /* Custom styles for the dropdown menu */
+    .custom-navbar .dropdown-menu {
+        background-color: #3b5d50;
+        border: none; 
+    }
+    
+    .custom-navbar .dropdown-item {
+        color: #ffffff !important;
+        opacity: .7;
+        transition: .3s all ease; 
+    }
+    
+    .custom-navbar .dropdown-item:hover {
+        background-color: #2e4b41;
+        opacity: 1; 
+    }
+    #btn{
+        font-weight: 600;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: #ffffff;
+        background: #2f2f2f;
+        border-color: #2f2f2f;
+    }
+    
+        </style>
+  </head>
+  <body>
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+            
+            <!-- Search Form -->
+            <form class="d-flex ms-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="btn" class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/home after login.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                            <li><a class="dropdown-item" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/categori1.html?#">Sofas</a></li>
+                            <li><a class="dropdown-item" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/categoty2.html">Tables</a></li>
+                            <li><a class="dropdown-item" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/category3.html">Chairs</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/about%20after%20login.html">About</a></li>
+                    <li><a class="nav-link" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/contact%20after%20login.html">Contact</a></li>
+                    <li><a class="nav-link" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/home.html">Logout</a></li>
+                    
+                </ul>
+    
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <li><a class="nav-link" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/User.html"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a class="nav-link" href="file:///C:/Users/Orange/Desktop/furni-1.0.0/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+    <section id="slider-section">
+      <div class="container">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://th.bing.com/th/id/R.942ba578a6305b46ce9105da6f6cf9e9?rik=SWd43oV8Fne05g&pid=ImgRaw&r=0"
+                alt="..."
+                style="width: 1100px; height: 500px"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://th.bing.com/th/id/R.942ba578a6305b46ce9105da6f6cf9e9?rik=SWd43oV8Fne05g&pid=ImgRaw&r=0"
+                alt="..."
+                style="width: 1100px; height: 500px"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://th.bing.com/th/id/R.942ba578a6305b46ce9105da6f6cf9e9?rik=SWd43oV8Fne05g&pid=ImgRaw&r=0"
+                alt="..."
+                style="width: 1100px; height: 500px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: مربع إدخال السعر -->
+    <section id="price-section">
+      <div class="container">
+        <div class="price">
+          <input type="text" />
+          <button style="border-radius: 30px;" type="submit" class="btn btn-success">Enter</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: الكروت -->
+    <section id="cards-section">
+        <div class="container">
+          <div class="card-container d-flex flex-wrap justify-content-between">
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+              <img
+                src="https://www.housingunits.co.uk/media/catalog/product/cache/8dc3298bba34b0846ef73bc138720a2d/7/a/7af62278a8af5c9a76b2b7f6c939aef8.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a href="file:///C:/Users/Orange/Desktop/furni-1.0.0/Details(2).html" style="border-radius: 30px;" class="btn btn-success">Show details</a>
+                <a href="#" style="border-radius: 30px;" class="btn btn-warning">Add product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer class="footer-section">
+        <div class="container relative">
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+        </p>
+                    </div>
+
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <ul class="list-unstyled d-inline-flex ms-auto">
+                            <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+    </footer>
+  </body>
+</html>
