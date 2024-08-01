@@ -84,7 +84,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $apiurl = 'http://127.0.0.1/brief4/get_products.php';
+                                $apiurl = 'http://127.0.0.1/Ecommerce-Website/brief4/get_products.php';
                                 $response = file_get_contents($apiurl);
 
                                 if ($response === FALSE) {
@@ -143,7 +143,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $apiurl = 'http://127.0.0.1/brief4/get_categories.php';
+                                $apiurl = 'http://127.0.0.1/Ecommerce-Website/brief4/get_categories.php';
                                 $response = file_get_contents($apiurl);
 
                                 if ($response === FALSE) {
@@ -218,7 +218,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $apiurl = 'http://127.0.0.1/brief4/get_users.php';
+                                $apiurl = 'http://127.0.0.1/Ecommerce-Website/brief4/get_users.php';
                                 $response = file_get_contents($apiurl);
 
                                 if ($response === FALSE) {

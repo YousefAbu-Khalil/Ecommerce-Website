@@ -9,7 +9,7 @@ $sql = "UPDATE products SET product_name='$product_name',price='$price',descript
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
-    header("Location: http://localhost/brief4/dashboard.php");
+    header("Location: http://localhost/Ecommerce-Website/brief4/dashboard.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

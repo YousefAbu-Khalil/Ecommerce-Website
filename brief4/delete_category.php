@@ -13,7 +13,7 @@ $sql = "DELETE FROM categories WHERE category_id='$category_id'";
 $result = $conn->query($sql);
 
 if ($result) {
-    header("Location: http://localhost/brief4/dashboard.php");
+    header("Location: http://localhost/Ecommerce-Website/brief4/dashboard.php");
     exit;
     http_response_code(201);
     echo json_encode(array('status' => http_response_code(), "message" => "category deleted successfully"));

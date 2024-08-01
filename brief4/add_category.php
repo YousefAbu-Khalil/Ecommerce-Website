@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = $conn->query($sql);
 
     if ($result) {
-        header("Location: http://127.0.0.1/brief4/dashboard.php");
+        header("Location: http://127.0.0.1/Ecommerce-Website/brief4/dashboard.php");
         exit;
         http_response_code(201);
         $data = [

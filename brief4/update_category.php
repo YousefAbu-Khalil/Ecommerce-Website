@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = $conn->query($sql);
 
     if ($result) {
-        header("Location: http://localhost/brief4/dashboard.php");
+        header("Location: http://localhost/Ecommerce-Website/brief4/dashboard.php");
         exit;
         http_response_code(201);
         $data = [

@@ -27,7 +27,7 @@
                 </thead>
                 <tbody>
                     <?php
-                    $apiurl = "http://127.0.0.1/brief4/get_category.php?id=" . $_GET['id'];
+                    $apiurl = "http://127.0.0.1/Ecommerce-Website/brief4/get_category.php?id=" . $_GET['id'];
                     $response = file_get_contents($apiurl);
 
                     if ($response === FALSE) {

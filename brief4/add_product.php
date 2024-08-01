@@ -26,7 +26,7 @@ if ($conn->query($sql) === TRUE) {
             $conn->query($sql);
         }
     }
-    header("Location: http://127.0.0.1/brief4/dashboard.php");
+    header("Location: http://127.0.0.1/Ecommerce-Website/brief4/dashboard.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
