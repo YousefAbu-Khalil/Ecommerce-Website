@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO users (user_name, role_id, email, password) VALUES ('$user_name', '$role_id', '$email', '$password')";
     $result = $conn->query($sql);
     if ($result) {
+        header("Location: http://localhost/Ecommerce-Website/brief4/dashboard.php");
+        exit;
         http_response_code(201);
         $data = [
             "message" => "User created successfully",

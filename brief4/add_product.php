@@ -4,7 +4,6 @@ $product_name = $_POST['product_name'];
 $price = $_POST['price'];
 $description = $_POST['description'];
 $category_ids = $_POST['category_ids'];
-$category_ids = explode(",", $category_ids);
 $filename = $_FILES["image"]["name"];
 $tempname = $_FILES["image"]["tmp_name"];
 
