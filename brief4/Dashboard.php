@@ -10,18 +10,6 @@
         .table-container {
             display: none;
         }
-
-        .form-check-input {
-            position: static !important;
-            margin-top: 0rem !important;
-            margin-left: 0rem !important;
-        }
-
-        .checkContainer {
-            border: 1px solid black;
-            margin: 2px;
-            padding: 2px;
-        }
     </style>
 </head>
 
@@ -75,37 +63,8 @@
                             <input type="file" class="form-control" id="product_image" name="image">
                         </div>
                         <div class="form-group">
-                            <h3>Categories</h3>
-                            <?php
-                            $apiurl = 'http://127.0.0.1/Ecommerce-Website/brief4/get_categories.php';
-                            $response = file_get_contents($apiurl);
-
-                            if ($response === FALSE) {
-                                die('Error occurred while fetching data from API.');
-                            }
-
-                            $data = json_decode($response, true);
-
-                            if ($data === NULL) {
-                                die('Error occurred while decoding JSON response.');
-                            }
-
-                            if (isset($data) && is_array($data)) {
-                                foreach ($data as $category) {
-                                    echo "
-                                <span class='checkContainer'>
-                                <input class='form-check-input' type='checkbox' name='category_ids[]' value='{$category['category_id']}' id='defaultCheck{$category['category_id']}'>
-                                <label class='form-check-label' for='defaultCheck{$category['category_id']}'>
-                                    {$category['category_name']}
-                                </label>
-                            </span>";
-                                }
-                            } else {
-                                echo "<tr><td colspan='6'>No products found or API response is not as expected.</td></tr>";
-                            }
-                            ?>
-
-
+                            <label for="category_ids">Category IDs (comma-separated)</label>
+                            <input type="text" class="form-control" id="category_ids" name="category_ids">
                         </div>
                         <button type="submit" class="btn btn-primary">Add Product</button>
                     </form>
